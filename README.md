@@ -83,11 +83,14 @@ To use this project, follow these steps:
 
 **Exploratory Data Analysis (EDA) - Streamlit Application:**
 
-**Migrating to SQL**: Following the weekly sales predictions, the data is migrated to a PostgreSQL database. Leveraging PostgreSQL as a Relational Database Management System allows us to store structured data in a tabular format. Utilizing SQL queries, we seamlessly access the required data from the database, facilitating efficient retrieval and analysis of pertinent information.
+**Migrating to SQL**: 
+- Following the weekly sales predictions, the data is migrated to a PostgreSQL database. Leveraging PostgreSQL as a Relational Database Management System allows us to store structured data in a tabular format. 
+- Utilizing SQL queries, we seamlessly access the required data from the database, facilitating efficient retrieval and analysis of pertinent information.
 
 **Top Sales**: 
-- Explore the `Top Stores` feature to discover the top 10 stores based on weekly sales, with the flexibility to select a specific date and either an overall or department-specific view. 
-- Additionally, the `Top Departments` option reveals the top 10 departments by weekly sales, allowing users to customize their analysis by choosing a date and either an overall or store-specific perspective. These features offer a dynamic way to gain insights into the highest-performing stores and departments under various criteria.
+- Explore the Top Stores option discover the top 10 stores based on weekly sales, with the flexibility to select a specific date and either an overall or department-specific view. 
+- Additionally, the Top Departments option reveals the top 10 departments by weekly sales, allowing users to customize their analysis by choosing a date and either an overall or store-specific perspective. 
+- These features offer a dynamic way to gain insights into the highest-performing stores and departments under various criteria.
 
 **Comparison**: 
 - Gain a detailed understanding of weekly sales dynamics by analyzing the influence of key features such as type, size, holiday, temperature, fuel price, CPI, unemployment, and multiple markdowns. 
