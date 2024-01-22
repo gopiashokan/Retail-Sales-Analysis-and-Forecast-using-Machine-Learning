@@ -1,4 +1,4 @@
-# Retail Sales Forecast
+# Retail Sales Analysis and Forecast
 
 **Introduction**
 
