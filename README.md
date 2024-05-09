@@ -1,9 +1,10 @@
-# Retail Sales Analysis and Forecast
+# Retail Sales Analysis and Forecast using Machine Learning
 
 **Introduction**
 
 Retail Sales Forecast employs advanced machine learning techniques, prioritizing careful data preprocessing, feature enhancement, and comprehensive algorithm assessment and selection. The streamlined Streamlit application integrates Exploratory Data Analysis (EDA) to find trends, patterns, and data insights. It offers users interactive tools to explore top-performing stores and departments, conduct insightful feature comparisons, and obtain personalized sales forecasts. With a commitment to delivering actionable insights, the project aims to optimize decision-making processes within the dynamic retail landscape.
 
+<br />
 
 **Table of Contents**
 
@@ -15,35 +16,38 @@ Retail Sales Forecast employs advanced machine learning techniques, prioritizing
 6. License
 7. Contact
 
+<br />
 
 **Key Technologies and Skills**
 - Python
+- Scikit-Learn
+- PostgreSQL
 - Numpy
 - Pandas
-- PostgreSQL
-- Scikit-Learn
 - Plotly
 - Matplotlib
 - Seaborn
 - Streamlit
-- Pickle
 
+<br />
 
 **Installation**
 
 To run this project, you need to install the following packages:
 
 ```python
-pip install numpy
-pip install pandas
-pip install psycopg2
 pip install scikit-learn
 pip install xgboost
+pip install psycopg2
+pip install numpy
+pip install pandas
 pip install plotly
 pip install matplotlib
 pip install seaborn
 pip install streamlit
 ```
+
+<br />
 
 **Usage**
 
@@ -54,6 +58,7 @@ To use this project, follow these steps:
 3. Run the Streamlit app: ```streamlit run app.py```
 4. Access the app in your browser at ```http://localhost:8501```
 
+<br />
 
 **Features**
 
@@ -65,7 +70,7 @@ To use this project, follow these steps:
 
 - **Handling Null Values**: Notably, the 'MarkDown' columns present a challenge with over 50% null values, while other columns exhibit minimal null values. To address this, we employ machine learning models to predict and impute the missing values, ensuring a more complete and robust dataset for subsequent analysis and modeling. This strategic approach allows us to mitigate the impact of missing data on the overall quality of our dataset.
 
-- **Feature Improvement**: Emphasizing enhanced modeling effectiveness, we concentrate on refining the dataset. This involves creating new features to extract deeper insights and enhance overall dataset efficiency. Evaluation, conducted through `Seaborn's Heatmap`, reveals that, aside from Size and Type with correlation values of 0.21 and 0.17 (absolute value) respectively, no other columns exhibit a strong correlation with weekly sales. This underscores the need for strategic feature enhancement to bolster the predictive power of our model.
+- **Feature Improvement**: Emphasizing enhanced modeling effectiveness, we concentrate on refining the dataset. This involves creating new features to extract deeper insights and enhance overall dataset efficiency. Evaluation, conducted through `Seaborn's Heatmap`, reveals that aside from Size and Type with correlation values of 0.21 and 0.17 (absolute value) respectively, no other columns exhibit a strong correlation with weekly sales. This underscores the need for a strategic feature enhancement to bolster the predictive power of our model.
 
 
 **Machine Learning Regression Model**:
@@ -74,12 +79,11 @@ To use this project, follow these steps:
 
 - **Algorithm Assessment**: In the realm of regression, our primary objective is to predict the continuous variable of weekly sales. Our journey begins by splitting the dataset into training and testing subsets. We systematically apply various algorithms, evaluating them based on training and testing accuracy using the R2 (R-squared) metric, which signifies the coefficient of determination. This process allows us to identify the most suitable base algorithm tailored to our specific data.
 
-- **Algorithm Selection**: After thorough evaluation, two contenders, the Extra Trees Regressor and Random Forest Regressor, demonstrate commendable testing accuracy. Upon checking for any overfitting issues in both training and testing, both models exhibit strong performance without overfitting concerns. I choose the Random Forest Regressor for its ability to strike a balance between interpretability and accuracy, ensuring robust performance on unseen data.
+- **Algorithm Selection**: After a thorough evaluation, two contenders, the Extra Trees Regressor and Random Forest Regressor, demonstrate commendable testing accuracy. Upon checking for any overfitting issues in both training and testing, both models exhibit strong performance without overfitting concerns. I choose the Random Forest Regressor for its ability to strike a balance between interpretability and accuracy, ensuring robust performance on unseen data.
 
 - **Model Accuracy and Metrics**: Upon optimizing parameters, model1 and model2 exhibit impressive accuracies of 97.4% and 97.7%, respectively. Opting for model1 (with MarkDowns) ensures robust predictions for unseen data. Additional evaluation includes key metrics like mean absolute error, mean squared error, root mean squared error, and the coefficient of determination (R-squared), offering a comprehensive assessment of the model's performance and reliability.
 
 - **Model Persistence**: We conclude this phase by saving our well-trained model to a pickle file. This strategic move enables us to effortlessly load the model whenever needed, streamlining the process of making predictions on weekly sales in future applications.
-
 
 
 **Exploratory Data Analysis (EDA) - Streamlit Application:**
@@ -89,7 +93,7 @@ To use this project, follow these steps:
 - Utilizing SQL queries, we seamlessly access the required data from the database, facilitating efficient retrieval and analysis of pertinent information.
 
 **Top Sales**: 
-- Explore the Top Stores option discover the top 10 stores based on weekly sales, with the flexibility to select a specific date and either an overall or department-specific view. 
+- Explore the Top Stores option to discover the top 10 stores based on weekly sales, with the flexibility to select a specific date and either an overall or department-specific view. 
 - Additionally, the Top Departments option reveals the top 10 departments by weekly sales, allowing users to customize their analysis by choosing a date and either an overall or store-specific perspective. 
 - These features offer a dynamic way to gain insights into the highest-performing stores and departments under various criteria.
 
@@ -106,16 +110,19 @@ To use this project, follow these steps:
 - Users provide input parameters such as date, store, department, holiday, temperature, fuel price, CPI, unemployment, and multiple markdowns. Leveraging the pre-trained Random Forest Regressor model stored in a pickle file, the system predicts weekly sales based on the user's input. 
 - Users can experiment with various combinations of input values, allowing our machine learning regression model to dynamically forecast weekly sales tailored to the provided data parameters. This interactive feature enhances user engagement and facilitates personalized predictions.
 
+<br />
 
 **Contributing**
 
 Contributions to this project are welcome! If you encounter any issues or have suggestions for improvements, please feel free to submit a pull request.
 
+<br />
 
 **License**
 
 This project is licensed under the MIT License. Please review the LICENSE file for more details.
 
+<br />
 
 **Contact**
 
